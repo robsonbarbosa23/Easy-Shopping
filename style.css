@@ -14,7 +14,7 @@
 .conteiner-left {
     width: 60%;
     display: inline-block;    
-    margin-top: 30%;
+    margin-top: 20%;
     padding-left: 136px;
 }
 
@@ -96,48 +96,47 @@ img {
     right: 20%;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:900px){
     .conteiner-left {
         width: 100%;
-        height: 50%;
+        height: 50vh;
         margin: 0;
         padding: 0;
     }
+
+    .conteiner-right {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 40px;
+    }
+
+    img {
+        position: static;
+        max-width: 90%;   
+    }
+
+    header {
+        display: none;
+    }
+
     h1 {
-        width: 268px;
+        width: auto;
         font-size: 36px;
         line-height: 52px;
         text-align: center;
-        margin: 58px auto;
+        margin: 58px 50px 0 50px;
     }
     p {
-        width: 296px;
+        width: auto;
         font-size: 14px;
         line-height: 24px;
         text-align: center;
-        margin: 15px auto
+        margin: 15px 40px;
         
     }
     .button-get {
         display: block;
         margin: 0 auto;
     }
-
-    img {
-        position: absolute;
-        width: 70%;
-        top: 10%;
-    }
-
-    .conteiner-right {
-        position: relative;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 50%;
-    }
-
-    .link {
-        display: none;
-    }
-}
+}   
